@@ -76,6 +76,7 @@ CONFIG_SCHEMA = cv.Schema(
         # Sub Sensor Configs
         cv.Optional(CONF_DISTANCE_SENSOR): sensor.sensor_schema(
             device_class=DEVICE_CLASS_DISTANCE,
+            unit_of_measurement="meter(s)",
             accuracy_decimals=2,
         ),
         cv.Optional(CONF_MOVEMENT_SENSOR): motion_class_schema,
